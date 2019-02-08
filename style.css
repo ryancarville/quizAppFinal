@@ -1,0 +1,227 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    
+    
+}
+header {
+    background-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363946;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    
+    
+    
+}
+
+header > h1 {
+    text-align: center;
+    color: black;
+    text-shadow: 10em;
+    display: block;
+    width: 100%;
+    
+}
+
+.quiz-info-box {
+    background-color: grey;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+    
+    
+}
+
+.quiz-info-box > img {
+    position: sticky;
+    width: 20%; 
+    float: left;
+}
+
+.quizStats {
+    position: sticky;
+    list-style: none;
+    color:black;
+    font-size: 30px;
+    
+    
+}
+
+main {
+    width: 100%;
+}
+
+.quizStart {
+    background-color:  grey;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363946;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.startButton {
+    display: block;
+    padding: 20px;
+    border: black;
+    border-radius: 200px 200px 200px 200px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.startButton:hover, button:focus {
+    background-color: white;
+    color: black;
+}
+
+.js-hidden{
+    display: none;
+}
+.js-quiz-form {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.question {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363946;
+    background-color: grey;
+    padding: 15px;
+    width: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    
+}
+
+.answers {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363946;
+    background-color: grey;
+    width: 60%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 30px;
+    float: left;
+}
+
+.multipleChoice {
+    background-color: lightgrey;
+    height: 60px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.rButton{
+    vertical-align: middle;
+}
+
+.answerOption {
+    vertical-align: middle;
+}
+
+.answerFeedback {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363946;
+    background-color: grey;
+    width: 72%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.answerFeedback > p {
+    line-height: 2em;
+}
+
+.submitButton {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.nextButton {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.quizEnd {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #363946;
+    background-color: grey;
+    width: 72%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+
+}
+.resetButton {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
