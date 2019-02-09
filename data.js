@@ -50,7 +50,7 @@ const STORE = [
         alt: 'aperture icon'
     },
     {
-        question: 'Who coined the term the “Decisive Moment”?',
+        question: 'Who coined the term the Decisive Moment?',
         answer: [
                 'Richard Avedon',
                 'Henri Cartier Bresson',
@@ -66,15 +66,15 @@ const STORE = [
         answer: [
                 'a spy camera',
                 'a surveillance camera',
-                'a light tight box with a “pinhole” punctured on one side',
+                'a light tight box with a pinhole punctured on one side',
                 'a child’s camera'
         ],
-        correctAnswer: 'a light tight box with a “pinhole” punctured on one side',
+        correctAnswer: 'a light tight box with a pinhole punctured on one side',
         icon: 'images/pinhole.jpg',
         alt: 'pinhole icon'
     },
     {
-        question: 'Define the term “flash duration”.',
+        question: 'Define the term flash duration.',
         answer: [
                 'the power of a flash',
                 'the amount of time it takes a flash to recharge',
@@ -110,7 +110,7 @@ const STORE = [
         alt: 'tripod icon'
     },
     {
-        question: 'What does the term “ISO” refer to?',
+        question: 'What does the term ISO refer to?',
         answer: [
                 'Internal State Optimizer',
                 'International Organization of Standardization',

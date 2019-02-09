@@ -21,21 +21,21 @@ function getNewQuestion(){
                     <div class="answers">
                     <form id="answerForm">
                     <fieldset style="border:none" >
-                    <legend>Please select one:</legend>
+                    <legend></legend>
                         <label class="multipleChoiceA">
                             <input type="radio" class="rButton" value="${STORE[questionCounter].answer[0]}" name="answer" required>
                             <span class="answerOption">${STORE[questionCounter].answer[0]}</span>
                         </label>
                         <label class="multipleChoiceB">
-                                <input type="radio" class="rButton" value="${STORE[questionCounter].answer[1]}" name="answer" required>
+                                <input type="radio" class="rButton" value="${STORE[questionCounter].answer[1]}" name="answer">
                                 <span class="answerOption">${STORE[questionCounter].answer[1]}</span>
                         </label>
                         <label class="multipleChoiceC">
-                                <input type="radio" class="rButton" value="${STORE[questionCounter].answer[2]}" name="answer" required>
+                                <input type="radio" class="rButton" value="${STORE[questionCounter].answer[2]}" name="answer">
                                 <span class="answerOption">${STORE[questionCounter].answer[2]}</span>
                         </label>
                         <label class="multipleChoiceD">
-                                <input type="radio" class="rButton" value="${STORE[questionCounter].answer[3]}" name="answer" required>
+                                <input type="radio" class="rButton" value="${STORE[questionCounter].answer[3]}" name="answer">
                                 <span class="answerOption">${STORE[questionCounter].answer[3]}</span>
                         </label>
                         <button type="button" class="submitButton">Submit Answer</button>
