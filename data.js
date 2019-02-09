@@ -1,6 +1,7 @@
 const STORE = [
+  
     {
-        question: 'What is an ‘f/stop’?',
+        question: 'What is a f/stop?',
         answer: [
                 'a function that controls the exposure',
                 'the size of a lens',
@@ -8,12 +9,11 @@ const STORE = [
                 'the aperture size'
         ],
         correctAnswer: 'the aperture size',
-        icon: 'images/apeture.jpg',
+        icon: 'images/filter.jpg',
         alt: 'apeture icon'
-    }
-
+    },
     {
-        question: 'Who makes the “5D” models?',
+        question: 'Who makes the 5D models?',
         answer: [
                 'Nikon',
                 'Canon',
@@ -23,8 +23,7 @@ const STORE = [
         correctAnswer: 'Canon',
         icon: 'images/canonLogo.jpg',
         alt: 'canon icon'
-    }
-
+    },
     {
         question: 'What setting controls motion?',
         answer: [
@@ -36,21 +35,8 @@ const STORE = [
         correctAnswer: 'shutter',
         icon: 'images/runningMan.jpg',
         alt: 'running man icon'
-    }
-
-    {
-        question: 'What is Depth of Field?',
-        answer: [
-                'the amount of knowledge one has about landscape photography',
-                'a built-in camera function that measures distance',
-                'the area in which a photo is in focus',
-                'how a camera geotags its images'
-        ],
-        correctAnswer: 'the area in which a photo is in focus',
-        icon: 'images/depthOfField.jpg',
-        alt: 'depth of field icon'
-    }
-
+    },
+    
     {
         question: 'How do you control Depth of Field?',
         answer: [
@@ -62,8 +48,7 @@ const STORE = [
         correctAnswer: 'aperture',
         icon: 'images/aperture.jpg',
         alt: 'aperture icon'
-    }
-
+    },
     {
         question: 'Who coined the term the “Decisive Moment”?',
         answer: [
@@ -75,8 +60,7 @@ const STORE = [
         correctAnswer: 'Henri Cartier Bresson',
         icon: 'images/jumpingImage.jpg',
         alt: 'jumping icon'
-    }
-
+    },
     {
         question: 'What is a pinhole camera?',
         answer: [
@@ -88,8 +72,7 @@ const STORE = [
         correctAnswer: 'a light tight box with a “pinhole” punctured on one side',
         icon: 'images/pinhole.jpg',
         alt: 'pinhole icon'
-    }
-
+    },
     {
         question: 'Define the term “flash duration”.',
         answer: [
@@ -101,8 +84,7 @@ const STORE = [
         correctAnswer: 'the amount of time the light of a flash is present',
         icon: 'images/flash.jpg',
         alt: 'flash icon'
-    }
-
+    },
     {
         question: 'Why is a UV filter important?',
         answer: [
@@ -114,8 +96,7 @@ const STORE = [
         correctAnswer: 'to protect the most outer lens element',
         icon: 'images/filter.jpg',
         alt: 'filter icon'
-    }
-
+    },
     {
         question: 'If you want to take a photo of the night sky, which piece of equipment it most valuable?',
         answer: [
@@ -127,8 +108,7 @@ const STORE = [
         correctAnswer: 'a tripod',
         icon: 'images/tripod.jpg',
         alt: 'tripod icon'
-    }
-
+    },
     {
         question: 'What does the term “ISO” refer to?',
         answer: [
@@ -141,4 +121,4 @@ const STORE = [
         icon: 'images/iso.jpg',
         alt: 'iso icon'
     }
-]
+];

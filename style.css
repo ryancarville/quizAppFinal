@@ -1,11 +1,18 @@
 * {
+    box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    
-    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+@media only screen and (min-width: 900px) {
+   
 header {
     background-color: grey;
     border-style: solid;
@@ -16,10 +23,7 @@ header {
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
-    
-    
-    
+    margin-top: 1%;  
 }
 
 header > h1 {
@@ -63,7 +67,11 @@ main {
     width: 100%;
 }
 
-.quizStart {
+footer{
+    position: absolute;
+    margin-top:65%;
+}
+.js-quizStart {
     background-color:  grey;
     border-style: solid;
     border-width: 2px;
@@ -73,7 +81,7 @@ main {
     justify-content: center;
     text-align: center;
     width: 50%;
-    padding: 30px;
+    padding: 15px;
     box-sizing: border-box;
     margin-top: 8%;
     margin-left: auto;
@@ -106,7 +114,7 @@ main {
 .js-quiz-form {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
     height: 500px;
     background-color: white;
     margin-left: auto;
@@ -137,19 +145,43 @@ main {
     border-color: #363946;
     background-color: grey;
     width: 60%;
-    padding: 25px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
+    float: left;
+    
+}
+
+.multipleChoiceA {
+    margin: 2%;
+    padding:5px;
+    background-color: blue ;
+    float: left;
+    
+}
+
+.multipleChoiceB {
+    margin: 2%;
+    padding:5px;
+    background-color: orange ;
     float: left;
 }
 
-.multipleChoice {
-    background-color: lightgrey;
-    height: 60px;
-    padding: 10px;
-    vertical-align: middle;
+.multipleChoiceC {
+    margin: 2%;
+    padding:5px;
+    background-color: limegreen ;
+    float: left;
+}
+
+.multipleChoiceD {
+    margin: 2%;
+    padding:5px;
+    background-color: rebeccapurple ;
+    float: left;
 }
 
 .rButton{
@@ -160,7 +192,18 @@ main {
     vertical-align: middle;
 }
 
-.answerFeedback {
+.submitButton {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+
+}
+
+.correctAnswerFeedback {
     box-sizing: border-box;
     border-style: solid;
     border-width: 2px;
@@ -179,19 +222,16 @@ main {
 
 }
 
+.correctAnswerFeedback img{
+    width: 50%;
+    border-radius: 70%;
+}
+
 .answerFeedback > p {
     line-height: 2em;
 }
 
-.submitButton {
-    height: 50px;
-    width: 200px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 .nextButton {
     height: 50px;
     width: 200px;
@@ -200,7 +240,7 @@ main {
 }
 
 
-.quizEnd {
+.finalResults {
     box-sizing: border-box;
     border-style: solid;
     border-width: 2px;
@@ -223,5 +263,8 @@ main {
     width: 200px;
     font-size: 20px;
     cursor: pointer;
+
+}
+
 
 }
