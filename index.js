@@ -55,7 +55,6 @@ function getNewQuestion(){
 function renderQuestion () {
     $('.js-quiz-form').html(getNewQuestion());
     $('.js-quiz-form').show();
-    
 };
 
 function checkAnswer() {
@@ -78,19 +77,17 @@ function ifCorrectAnswer() {
     let correctAnswer = `${STORE[questionCounter].correctAnswer}`;
     $('.js-quiz-form').html(`<div class="correctAnswerFeedback"><div class="icon">
     <img src="images/correct.png" alt="thumbs up"/>
-    </div><p>Well done!<br>Here is a point for you!<br> Current score to: <b>${score}</b></p><button type=button class="nextButton">Next</button></div>`);
-    
-    
+    </div><p>Well done!<br>Here is a point for you!<br> Current score to: <b>${score}</b></p>
+    <button type=button class="nextButton">Next</button></div>`);
 };
 
 function ifWrongAnswer() {
     let correctAnswer = `${STORE[questionCounter].correctAnswer}`;
     $('.js-quiz-form').html(`<div class="correctAnswerFeedback"><div class="icon">
     <img src="images/wrong.png" alt="thumbs down"/>
-    </div><p>Incorrect.<br> The correct answer was: <br><b> ${correctAnswer}</b></p><button type=button class="nextButton">Next</button></div>`);
-    
+    </div><p>Incorrect.<br> The correct answer was: <br><b> ${correctAnswer}</b></p>
+    <button type=button class="nextButton">Next</button></div>`);
 };
-
 
 function nextButton(){
     //applies a action when the next button it pressed
@@ -99,8 +96,6 @@ function nextButton(){
         renderQuestion ();
     });
 };
-
-
 
 function finalResults(){
     //renders the last page of the quiz.  Displays the total score.
@@ -145,8 +140,6 @@ function startQuiz(){
         renderQuestion ();  
     });
 };
-
-
 
 function createQuiz(){
     startQuiz();
