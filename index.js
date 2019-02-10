@@ -16,9 +16,10 @@ function updateScore (){
 function getNewQuestion(){
     //generates a new question with new multiple choice answers
     if (questionCounter < STORE.length) {
-        return `<div class="js-quiz-form">
-                    <div class="question"><h2>${STORE[questionCounter].question}</h2></div>
-                    <div class="answers">
+        return `<div class="question">
+                    <h2>${STORE[questionCounter].question}</h2>
+                </div>
+                <div class="answers">
                     <form id="answerForm">
                     <fieldset style="border:none" >
                     <legend></legend>
@@ -39,10 +40,8 @@ function getNewQuestion(){
                                 <span class="answerOption">${STORE[questionCounter].answer[3]}</span>
                         </label>
                         <button type="button" class="submitButton">Submit Answer</button>
-                        </fieldset>
-                        </form>
-                    </div>
-                    </div>
+                    </fieldset>
+                    </form>
                 </div>`
     }
     else {
@@ -101,17 +100,17 @@ function finalResults(){
     $('.questionNum').text(10);
     if (score >= 7){
         $('.js-quiz-form').html(`<div class="finalResults"><div class="icon">
-        </div><p>Your final score is: <b>${score}</b><br><br> Way to go hot shot!</p>
+        </div><p><b>Your final score is: <br> ${score} <br> Way to go hot shot!</b></p>
         <button type=button class="restartButton">try again</button></div>`);
     }
-    else if (score <= 6 || score >=4) {
+    else if (score >= 4 && score <=6) {
         $('.js-quiz-form').html(`<div class="finalResults"><div class="icon">
-        </div><p>Your final score is: <b>${score}</b><br><br> Not bad, but stick to instagram.</p>
+        </div><p><b>Your final score is: <br> ${score} <br> Not bad, but stick to instagram.</b></p>
         <button type=button class="restartButton">try again</button></div>`);
     }
     else if(score <= 3){
         $('.js-quiz-form').html(`<div class="finalResults"><div class="icon">
-        </div><p>Your final score is: <b>${score}</b><br><br> Yikes. Take tech for granted I see.</p>
+        </div><p><b>Your final score is: <br> ${score} <br> Stick to accounting.</b></p>
         <button type=button class="restartButton">try again</button></div>`);
     }
     
@@ -144,7 +143,6 @@ function createQuiz(){
     startQuiz();
     checkAnswer();
     nextButton();
-    
 };
 
 $(createQuiz());

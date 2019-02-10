@@ -9,11 +9,9 @@ const STORE = [
                 'the aperture size'
         ],
         correctAnswer: 'the aperture size',
-        icon: 'images/filter.jpg',
-        alt: 'apeture icon'
     },
     {
-        question: 'Who makes the 5D models?',
+        question: 'Who makes the 5D model?',
         answer: [
                 'Nikon',
                 'Canon',
@@ -21,93 +19,76 @@ const STORE = [
                 'Pentax'
         ],
         correctAnswer: 'Canon',
-        icon: 'images/canonLogo.jpg',
-        alt: 'canon icon'
     },
     {
         question: 'What setting controls motion?',
         answer: [
-                'aperture',
-                'shutter',
+                'the aperture',
+                'the shutter',
                 'ISO',
-                'None of the above'
+                'none of the above'
         ],
-        correctAnswer: 'shutter',
-        icon: 'images/runningMan.jpg',
-        alt: 'running man icon'
+        correctAnswer: 'the shutter',
     },
-    
     {
         question: 'How do you control Depth of Field?',
         answer: [
-                'shutter',
+                'the shutter',
                 'ISO',
-                'aperture',
-                'None of the above'
+                'the aperture',
+                'none of the above'
         ],
-        correctAnswer: 'aperture',
-        icon: 'images/aperture.jpg',
-        alt: 'aperture icon'
+        correctAnswer: 'the aperture',
     },
     {
         question: 'Who coined the term the Decisive Moment?',
         answer: [
                 'Richard Avedon',
-                'Henri Cartier Bresson',
                 'Irving Penn',
-                'Annie Leibovitz'
+                'Annie Leibovitz',
+                'Henri Cartier Bresson'
         ],
         correctAnswer: 'Henri Cartier Bresson',
-        icon: 'images/jumpingImage.jpg',
-        alt: 'jumping icon'
     },
     {
         question: 'What is a pinhole camera?',
         answer: [
+                'a light tight box with a pinhole punctured on one side',
                 'a spy camera',
                 'a surveillance camera',
-                'a light tight box with a pinhole punctured on one side',
                 'a child’s camera'
         ],
         correctAnswer: 'a light tight box with a pinhole punctured on one side',
-        icon: 'images/pinhole.jpg',
-        alt: 'pinhole icon'
     },
     {
         question: 'Define the term flash duration.',
         answer: [
                 'the power of a flash',
-                'the amount of time it takes a flash to recharge',
-                'the amount of time the light of a flash is present',
-                'how long a flash-bulb will last before needing to be replaced'
+                'the time it takes a flash to recharge',
+                'life span of a flash-bulb',
+                'the amount of time light from a flash is present'
         ],
-        correctAnswer: 'the amount of time the light of a flash is present',
-        icon: 'images/flash.jpg',
-        alt: 'flash icon'
+        correctAnswer: 'the amount of time light from a flash is present',
     },
     {
         question: 'Why is a UV filter important?',
         answer: [
+                'it protects the outer lens element',
                 'to block unwanted light rays',
-                'to protect the most outer lens element',
-                'To enhance UV light rays',
-                'All of the above'
+                'to enhance UV light rays',
+                'all of the above'
         ],
-        correctAnswer: 'to protect the most outer lens element',
-        icon: 'images/filter.jpg',
-        alt: 'filter icon'
+        correctAnswer: 'it protects the outer lens element',
     },
     {
         question: 'If you want to take a photo of the night sky, which piece of equipment it most valuable?',
         answer: [
                 'a flashlight',
-                'a tripod',
                 'a long lens',
+                'a tripod',
                 'a polarizer'
         ],
         correctAnswer: 'a tripod',
-        icon: 'images/tripod.jpg',
-        alt: 'tripod icon'
     },
     {
         question: 'What does the term ISO refer to?',
@@ -118,7 +99,5 @@ const STORE = [
                 'Immediate State Optics'
         ],
         correctAnswer: 'International Organization of Standardization',
-        icon: 'images/iso.jpg',
-        alt: 'iso icon'
     }
 ];

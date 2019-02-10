@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 body {
@@ -26,14 +26,13 @@ header {
 header > p {
     text-align: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 1px 1px white;
 }
 
 .quiz-info-box {
     width: 100%;
     height: 60px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -55,20 +54,16 @@ header > p {
     position: sticky;
     list-style: none;
     color: blue;
-    font-size: 16px;
-    margin-right: 20%;
-    
-    
+    font-size: 20px;
+    margin-right: 20%; 
 }
 
 main {
     width: 100%;
 }
 
-
 .js-quizStart {
     background-image: linear-gradient(to top, white, orange);
-    box-sizing: border-box;
     border-radius: 15px;
     width: 70%;
     padding: 25px;
@@ -81,7 +76,7 @@ main {
     margin-right: auto;
     color: white;
     font-size: 20px;
-    text-shadow: 2px 2px blue;
+    text-shadow: 1px 1px blue;
 }
 
 .startButton {
@@ -105,9 +100,6 @@ main {
     color: black;
 }
 
-.js-hidden{
-    display: none;
-}
 .js-quiz-form {
     display: flex;
     flex-direction: column;
@@ -120,7 +112,6 @@ main {
 }
 
 .question {
-    box-sizing: border-box;
     background-image: linear-gradient(to bottom, white, blue); 
     border-radius: 15px;
     padding: 20px;
@@ -133,17 +124,14 @@ main {
     font-size: 14px;
     color: white;
     text-shadow: 1px 1px orange;
-    
 }
 
 .answers {
-    box-sizing: border-box;
     width: 100%;
     display: block;
     margin: 5%;
     font-size: 20px;
     float: left;
-    
 }
 
 .multipleChoiceA {
@@ -153,8 +141,7 @@ main {
     width: 100%;
     float: left;
     color: white;
-    margin-bottom: 20px;
-    
+    margin-bottom: 10px;
 }
 
 .multipleChoiceB {
@@ -164,7 +151,7 @@ main {
     width: 100%;
     float: left;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .multipleChoiceC {
@@ -174,7 +161,7 @@ main {
     width: 100%;
     float: left;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .multipleChoiceD {
@@ -184,7 +171,7 @@ main {
     width: 100%;
     float: left;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .rButton{
@@ -207,8 +194,12 @@ main {
     color: white
 }
 
+.submitButton:hover {
+    background-color:white;
+    color:orange;
+}
+
 .correctAnswerFeedback {
-    box-sizing: border-box;
     border-radius: 15px;
     background-image: linear-gradient(orange, white);
     width: 72%;
@@ -221,18 +212,15 @@ main {
     align-items: center;
     font-size: 20px;
     text-align: center;
-
 }
 
 .correctAnswerFeedback img{
     width: 50%;
-    
 }
 
 .answerFeedback > p {
     line-height: 2em;
 }
-
 
 .nextButton {
     background-color: orange;
@@ -245,10 +233,13 @@ main {
     color: white;
 }
 
+.nextButton:hover {
+    background-color:white;
+    color:orange;
+}
 
 .finalResults {
     background-image: linear-gradient(to top, white, orange);
-    box-sizing: border-box;
     border-radius: 15px;
     width: 72%;
     padding: 25px;
@@ -260,9 +251,10 @@ main {
     align-items: center;
     font-size: 30px;
     text-align: center;
-    color: blue;
-
+    color: white;
+    text-shadow: 1px 1px blue;
 }
+
 .restartButton {
     background-color: orange;
     border-radius: 15px;
@@ -272,8 +264,13 @@ main {
     font-size: 20px;
     cursor: pointer;
     color: white;
-
 }
+
+.restartButton:hover {
+    background-color:white;
+    color:orange;
+}
+
 
 @media only screen and (min-width: 600px){
 
@@ -282,7 +279,6 @@ main {
     margin-top: 2%;
     margin-left: 15%; 
 }
-
 
 }
 
