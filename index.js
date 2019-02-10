@@ -74,19 +74,20 @@ function checkAnswer() {
 };
 
 function ifCorrectAnswer() {
+    updateScore();
     let correctAnswer = `${STORE[questionCounter].correctAnswer}`;
     $('.js-quiz-form').html(`<div class="correctAnswerFeedback"><div class="icon">
-    <img src="${STORE[questionCounter].icon}" alt="${STORE[questionCounter].alt}"/>
-    </div><p><b>Well done!</b></p><button type=button class="nextButton">Next</button></div>`);
-    updateScore();
+    <img src="images/correct.png" alt="thumbs up"/>
+    </div><p>Well done!<br>Here is a point for you!<br> Current score to: <b>${score}</b></p><button type=button class="nextButton">Next</button></div>`);
+    
     
 };
 
 function ifWrongAnswer() {
     let correctAnswer = `${STORE[questionCounter].correctAnswer}`;
     $('.js-quiz-form').html(`<div class="correctAnswerFeedback"><div class="icon">
-    <img src="${STORE[questionCounter].icon}" alt="${STORE[questionCounter].alt}"/>
-    </div><p><b>WRONG! The correct answer was: <br> ${correctAnswer}</b></p><button type=button class="nextButton">Next</button></div>`);
+    <img src="images/wrong.png" alt="thumbs down"/>
+    </div><p>Incorrect.<br> The correct answer was: <br><b> ${correctAnswer}</b></p><button type=button class="nextButton">Next</button></div>`);
     
 };
 
@@ -104,8 +105,21 @@ function nextButton(){
 function finalResults(){
     //renders the last page of the quiz.  Displays the total score.
     $('.questionNum').text(10);
-    $('.js-quiz-form').html(`<div class="finalResults"><div class="icon">
-    </div><p><b>Then end! <br> Your final score is: ${score}</b></p><button type=button class="restartButton">try again</button></div>`);
+    if (score >= 7){
+        $('.js-quiz-form').html(`<div class="finalResults"><div class="icon">
+        </div><p>Your final score is: <b>${score}</b><br><br> Way to go hot shot!</p>
+        <button type=button class="restartButton">try again</button></div>`);
+    }
+    else if (score <= 6 || score >=4) {
+        $('.js-quiz-form').html(`<div class="finalResults"><div class="icon">
+        </div><p>Your final score is: <b>${score}</b><br><br> Not bad, but stick to instagram.</p>
+        <button type=button class="restartButton">try again</button></div>`);
+    }
+    else if(score <= 3){
+        $('.js-quiz-form').html(`<div class="finalResults"><div class="icon">
+        </div><p>Your final score is: <b>${score}</b><br><br> Yikes. Take tech for granted I see.</p>
+        <button type=button class="restartButton">try again</button></div>`);
+    }
     
 };
 

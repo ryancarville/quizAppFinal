@@ -5,6 +5,7 @@
 
 body {
     background-image: url('images/bg.jpg');
+    background-blend-mode: lighten;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,46 +13,50 @@ body {
     align-items: center;
 }
 
-   
 header {
-    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(to bottom, white, orange);
+    border-radius: 15px;
+    color: blue;
     width: 70%;
     display: flex;
     flex-direction: column;
-    margin-top: 1%; 
+    margin-top: 5%; 
 }
 
 header > p {
     text-align: center;
-    color: black;
     width: 100%;
-    font-size: 30px;
-    
+    font-size: 20px;
+    text-shadow: 1px 1px white;
 }
 
 .quiz-info-box {
     width: 100%;
-    height: 100px;
+    height: 60px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2%;
-    
-    
+    text-align: center;
 }
 
 .quiz-info-box > img {
     position: sticky;
-    width: 25%; 
+    width: 40%; 
+    padding: 10px;
     float: left;
+    margin-left: 10%;
+    margin-bottom: 2%;
 }
 
 .quizStats {
+    z-index: 10;
     position: sticky;
     list-style: none;
-    color:black;
-    font-size: 20px;
+    color: blue;
+    font-size: 16px;
+    margin-right: 20%;
     
     
 }
@@ -62,10 +67,11 @@ main {
 
 
 .js-quizStart {
-    background-image: linear-gradient(to bottom right,green, yellow);
+    background-image: linear-gradient(to top, white, orange);
     box-sizing: border-box;
-    width: 50%;
-    padding: 15px;
+    border-radius: 15px;
+    width: 70%;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,7 +80,8 @@ main {
     margin-left: auto;
     margin-right: auto;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
+    text-shadow: 2px 2px blue;
 }
 
 .startButton {
@@ -103,6 +110,7 @@ main {
 }
 .js-quiz-form {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 80%;
@@ -113,73 +121,70 @@ main {
 
 .question {
     box-sizing: border-box;
-    background-image: linear-gradient(to left,blue, yellow,purple,red,violet);
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 15px;
-    width: 35%;
+    background-image: linear-gradient(to bottom, white, blue); 
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
     height: 25%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 14px;
     color: white;
+    text-shadow: 1px 1px orange;
     
 }
 
 .answers {
     box-sizing: border-box;
-    width: 60%;
-    padding: 10px;
+    width: 100%;
     display: block;
-    font-size: 18px;
+    margin: 5%;
+    font-size: 20px;
     float: left;
     
 }
 
 .multipleChoiceA {
-    background-image: linear-gradient(80deg,red,orange,green,blue,indigo,violet);
-    border: 2px solid black;
-    border-radius: 25px;
+    background-image: linear-gradient(to bottom, white, blue); 
+    border-radius: 15px;
     padding: 10px;
-    margin: 5%;
     width: 100%;
     float: left;
     color: white;
+    margin-bottom: 20px;
+    
 }
 
 .multipleChoiceB {
-    background-image: linear-gradient(-10deg,lime,blue,red,silver,yellow,orange);
-    border: 2px solid black;
-    border-radius: 25px;
+    background-image: linear-gradient(to bottom, white, blue); 
+    border-radius: 15px;
     padding: 10px;
-    margin: 5%;
     width: 100%;
     float: left;
     color: white;
+    margin-bottom: 20px;
 }
 
 .multipleChoiceC {
-    background-image: linear-gradient(60deg,violet,green,orange,blue,indigo,red);
-    border: 2px solid black;
-    border-radius: 25px;
+    background-image: linear-gradient(to bottom, white, blue); 
+    border-radius: 15px;
     padding: 10px;
-    margin: 5%;
     width: 100%;
     float: left;
     color: white;
+    margin-bottom: 20px;
 }
 
 .multipleChoiceD {
-    background-image: linear-gradient(45deg,lime,blue,red,silver,yellow,orange);
-    border: 2px solid black;
-    border-radius: 25px;
+    background-image: linear-gradient(to bottom, white, blue); 
+    border-radius: 15px;
     padding: 10px;
-    margin: 5%;
     width: 100%;
     float: left;
     color: white;
+    margin-bottom: 20px;
 }
 
 .rButton{
@@ -191,21 +196,21 @@ main {
 }
 
 .submitButton {
+    background-color: orange;
+    border-radius: 15px;
+    box-shadow: 1px 1px black;
     height: 50px;
     width: 50%;
-    font-size: 10px;
+    font-size: 15px;
     cursor: pointer;
     float: right;
-    margin-top: 2%;
-    margin-right: 3%;
-
+    color: white
 }
 
 .correctAnswerFeedback {
     box-sizing: border-box;
-    border-style: solid;
-    border-width: 2px;
-    background-image: linear-gradient(red, yellow);
+    border-radius: 15px;
+    background-image: linear-gradient(orange, white);
     width: 72%;
     padding: 25px;
     margin-left: auto;
@@ -214,14 +219,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 
 }
 
 .correctAnswerFeedback img{
     width: 50%;
-    border-radius: 70%;
+    
 }
 
 .answerFeedback > p {
@@ -230,19 +235,21 @@ main {
 
 
 .nextButton {
+    background-color: orange;
+    border-radius: 15px;
+    box-shadow: 1px 1px black;
     height: 50px;
     width: 200px;
     font-size: 20px;
     cursor: pointer;
+    color: white;
 }
 
 
 .finalResults {
+    background-image: linear-gradient(to top, white, orange);
     box-sizing: border-box;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #363946;
-    background-color: grey;
+    border-radius: 15px;
     width: 72%;
     padding: 25px;
     margin-left: auto;
@@ -253,17 +260,30 @@ main {
     align-items: center;
     font-size: 30px;
     text-align: center;
+    color: blue;
 
 }
-.resetButton {
+.restartButton {
+    background-color: orange;
+    border-radius: 15px;
+    box-shadow: 1px 1px black;
     height: 50px;
     width: 200px;
     font-size: 20px;
     cursor: pointer;
+    color: white;
 
 }
 
+@media only screen and (min-width: 600px){
+
+.quiz-info-box > img {
+    width: 15%;
+    margin-top: 2%;
+    margin-left: 15%; 
+}
 
 
+}
 
 
