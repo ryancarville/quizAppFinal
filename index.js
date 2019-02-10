@@ -48,7 +48,6 @@ function getNewQuestion(){
     else {
         finalResults();
         restartQuiz();
-        
     }
 };
 
