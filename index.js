@@ -75,7 +75,7 @@ function ifCorrectAnswer() {
     let correctAnswer = `${STORE[questionCounter].correctAnswer}`;
     $('.js-quiz-form').html(`<div class="correctAnswerFeedback"><div class="icon">
     <img src="images/correct.png" alt="thumbs up"/>
-    </div><p>Well done!<br>Here is a point for you!<br> Current score to: <b>${score}</b></p>
+    </div><p>Well done!<br>Here is a point for you!<br> Current score: <b>${score}</b></p>
     <button type=button class="nextButton">Next</button></div>`);
 };
 
