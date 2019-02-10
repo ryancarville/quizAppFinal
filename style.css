@@ -45,17 +45,16 @@ header > p {
     width: 40%; 
     padding: 10px;
     float: left;
-    margin-left: 10%;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
 }
 
 .quizStats {
-    z-index: 10;
+    padding: 10px;
     position: sticky;
     list-style: none;
     color: blue;
     font-size: 20px;
-    margin-right: 20%; 
+    margin-bottom: 20%; 
 }
 
 main {
@@ -75,7 +74,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     text-shadow: 1px 1px blue;
 }
 
@@ -227,7 +226,7 @@ main {
     border-radius: 15px;
     box-shadow: 1px 1px black;
     height: 50px;
-    width: 200px;
+    width: 140px;
     font-size: 20px;
     cursor: pointer;
     color: white;
@@ -260,8 +259,9 @@ main {
     border-radius: 15px;
     box-shadow: 1px 1px black;
     height: 50px;
-    width: 200px;
-    font-size: 20px;
+    width: 140px;
+    padding: 10px;
+    font-size: 16px;
     cursor: pointer;
     color: white;
 }
@@ -275,9 +275,19 @@ main {
 @media only screen and (min-width: 600px){
 
 .quiz-info-box > img {
-    width: 15%;
-    margin-top: 2%;
-    margin-left: 15%; 
+    width: 150px;
+    margin-top: 8%;
+    margin-left: 5%; 
+}
+
+.quizStats {
+    padding: 10px;
+    position: sticky;
+    list-style: none;
+    color: blue;
+    font-size: 20px;
+    margin-top: 18%;
+    margin-right: 8% 
 }
 
 }
