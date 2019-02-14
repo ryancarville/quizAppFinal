@@ -17,14 +17,19 @@ function getNewQuestion(){
     //generates a new question with new multiple choice answers
     if (questionCounter < STORE.length) {
         return `<div class="question">
-                    <h2>${STORE[questionCounter].question}</h2>
+                    <form id="questionForm">
+                    <fieldset style="border:none" >
+                    <legend></legend>
+                        <h2>${STORE[questionCounter].question}</h2>
+                    </fieldset>
+                    </form>
                 </div>
                 <div class="answers">
                     <form id="answerForm">
                     <fieldset style="border:none" >
                     <legend></legend>
                         <label class="multipleChoiceA">
-                            <input type="radio" class="rButton" value="${STORE[questionCounter].answer[0]}" name="answer" required>
+                            <input type="radio" class="rButton" value="${STORE[questionCounter].answer[0]}" required autofocus name="answer">
                             <span class="answerOption">${STORE[questionCounter].answer[0]}</span>
                         </label>
                         <label class="multipleChoiceB">

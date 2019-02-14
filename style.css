@@ -141,6 +141,7 @@ main {
     float: left;
     color: white;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .multipleChoiceB {
@@ -151,6 +152,7 @@ main {
     float: left;
     color: white;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .multipleChoiceC {
@@ -161,6 +163,7 @@ main {
     float: left;
     color: white;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .multipleChoiceD {
@@ -171,6 +174,7 @@ main {
     float: left;
     color: white;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .rButton{
@@ -196,6 +200,7 @@ main {
 .submitButton:hover {
     background-color:white;
     color:orange;
+    cursor: pointer;
 }
 
 .correctAnswerFeedback {
@@ -235,6 +240,7 @@ main {
 .nextButton:hover {
     background-color:white;
     color:orange;
+    cursor: pointer;
 }
 
 .finalResults {
@@ -269,6 +275,7 @@ main {
 .restartButton:hover {
     background-color:white;
     color:orange;
+    cursor: pointer;
 }
 
 
